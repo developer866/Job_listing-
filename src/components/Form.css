@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.alternative {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+}
+.A {
+  width: 100%;
+  align-items: center;
+  border-radius: 10px;
+}
+.alternative input {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.alternative input:focus {
+  border: none;
+  outline: none;
+}
+.B {
+  width: fit-content;
+  float: left;
+  align-self: center;
+  background: #00ffff20;
+  padding: 10px;
+  border-radius: 0 5px 5px 0px;
+}
+.B_inverse {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.Mortage_type_radio {
+  border: 1px solid black;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.Mortage_type_radio p {
+  margin-left: 5px;
+}
+
+.Mortage_type_radio:hover {
+  background: hsl(61, 70%, 80%);
+  border: hsl(61, 70%, 52%) 1px solid;
+}
+.Calculate_Repayment {
+  width: 100%;
+  margin-top: 10px;
+  background: hsl(61, 70%, 52%);
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  font: 16px;
+  font-weight: bold;
+}
