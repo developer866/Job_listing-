@@ -1,8 +1,9 @@
 import React from "react";
 import "./Form.css";
+import image from "../images/icon-calculator.svg";
 
 function Form(props) {
-  const { handleChange, handleSubmit, inputs,clearForm} = props;
+  const { handleChange, handleSubmit, inputs, clearForm } = props;
 
   return (
     <div className="form">
@@ -100,6 +101,7 @@ function Form(props) {
 
         <div>
           <button className="Calculate_Repayment" type="submit">
+            <img src={image} alt="" srcset="" />
             <p>Calculate Repayments</p>
           </button>
         </div>
@@ -109,24 +111,3 @@ function Form(props) {
 }
 
 export default Form;
-
-/* <div>
-          <p>mortgage Amount</p>
-          <input
-            type="text"
-            placeholder="E"
-            className="form_input_Amount form_input"
-          />
-        </div> */
-
-/* <div>
-          <div>
-            <p>Mortgage Term</p>
-            <input type="text" placeholder="Years" className="form_input" />
-          </div>
-
-          <div>
-            <p>Intrest Rate</p>
-            <input type="text" placeholder="%" className="form_input" />
-          </div>
-        </div> */

@@ -66,6 +66,9 @@ input[type="radio"]:checked{
 }
 .Calculate_Repayment {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
   background: hsl(61, 70%, 52%);
   border: none;
@@ -73,4 +76,7 @@ input[type="radio"]:checked{
   border-radius: 20px;
   font: 16px;
   font-weight: bold;
+}
+.Calculate_Repayment img{
+  padding-right: 1rem;
 }
