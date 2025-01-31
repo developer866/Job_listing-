@@ -1,0 +1,12 @@
+.Result-empty{
+    text-align: center;
+    background: hsl(202, 55%, 16%);
+    /* padding: 100px; */
+    color: white;
+    /* margin-top: 2rem; */
+}
+.result{
+    text-align: center;
+    background: hsl(202, 55%, 16%);
+    color: white;
+}

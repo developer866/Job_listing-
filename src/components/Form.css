@@ -3,6 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+.form{
+  padding: 20px;
+}
+input[type="radio"]{
+  border: none;
+}
+input[type="radio"]:checked{
+  accent-color: hsl(61, 70%, 52%);
+  cursor: pointer;
+  border: none;
+}
 
 .alternative {
   display: flex;

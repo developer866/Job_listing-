@@ -5,7 +5,7 @@ function Form(props) {
   const { handleChange, handleSubmit, inputs,clearForm} = props;
 
   return (
-    <div>
+    <div className="form">
       <div>
         <h2>Mortgage Calcultor</h2>
         <button onClick={clearForm}>Clear All</button>

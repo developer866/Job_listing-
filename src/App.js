@@ -1,6 +1,6 @@
 import "./App.css";
 import Result from "./components/Result";
-import Form from "./components/Form"; 
+import Form from "./components/Form";
 import { useState } from "react";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     interestRate: "",
     type: "Repayement",
   });
-  
+
   const [result, setResult] = useState({
     monthlyRepayment: 0,
     totalRepayment: 0,
@@ -23,6 +23,8 @@ function App() {
       [name]: value,
     }));
   };
+
+  const [submitValue, setSubmitValue] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -46,25 +48,34 @@ function App() {
       monthlyRepayment: monthlyRepayment.toFixed(2),
       totalRepayment: totalRepayment,
     });
+
+    setSubmitValue(true);
   };
 
-  // Function to clear inputs 
-  const clearForm =()=>{
+  // Function to clear inputs
+  const clearForm = () => {
     setInputs({
-      amount:"",
-      term:'',
-      interestRate:'',
-      type:"Repayement",
-    })
+      amount: "",
+      term: "",
+      interestRate: "",
+      type: "Repayement",
+    });
     setResult({
-      monthlyRepayment:0,
-      totalRepayment:0,
-    })
-  }
+      monthlyRepayment: 0,
+      totalRepayment: 0,
+    });
+    setSubmitValue(false);
+  };
   return (
     <div className="App">
-      <Form handleChange = {handleChange} handleSubmit ={handleSubmit} inputs = {inputs} clearForm = {clearForm}/>
-      <Result result = {result}/>
+      <Form
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+        inputs={inputs}
+        clearForm={clearForm}
+      />
+
+      <Result result={result} submitValue={submitValue} />
     </div>
   );
 }

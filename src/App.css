@@ -1,6 +1,8 @@
 .App{
+    /* display: flex;
+    justify-content: space-between; */
     width: 60%;
     margin: 3rem auto;
-    padding: 20PX;
+    /* padding: 20PX; */
     border: 1px solid black;
 }
