@@ -1,12 +1,20 @@
-.Result-empty{
-    text-align: center;
-    background: hsl(202, 55%, 16%);
-    /* padding: 100px; */
-    color: white;
-    /* margin-top: 2rem; */
+.Result-empty {
+  text-align: center;
+  background: hsl(202, 55%, 16%);
+  color: hsl(203, 41%, 72%);
+  /* color: white; */
+  padding: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-.result{
-    text-align: center;
-    background: hsl(202, 55%, 16%);
-    color: white;
+.result {
+  text-align: center;
+  background: hsl(202, 55%, 16%);
+  color: hsl(203, 41%, 72%);
+  /* color: white; */
+  padding: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
+
+

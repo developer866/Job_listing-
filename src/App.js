@@ -11,11 +11,18 @@ function App() {
     type: "Repayement",
   });
 
+  // //HAndling Error
+  // const [errors, setErrors] = useState({
+  //   amount: false,
+  //   term: false,
+  //   interestRate: false,
+  // });
+
   const [result, setResult] = useState({
     monthlyRepayment: 0,
     totalRepayment: 0,
   });
-
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setInputs((prevInputs) => ({
@@ -23,15 +30,29 @@ function App() {
       [name]: value,
     }));
   };
-
+  
   const [submitValue, setSubmitValue] = useState(false);
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     const { amount, term, interestRate, type } = inputs;
     const p = parseFloat(amount);
     const r = parseFloat(interestRate);
     const n = parseInt(term) * 12;
+
+    // Validation
+    // const newError = {
+    //   amount:amount === "",
+    //   term: term === "",
+    //   interestRate: interestRate ==="",
+    // }
+
+    // setErrors(newError)
+
+    // if(Object.values(newError).includes(true)){
+    //   return;
+    // }
+
 
     let monthlyRepayment = 0;
 

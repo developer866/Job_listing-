@@ -8,8 +8,10 @@ function Form(props) {
   return (
     <div className="form">
       <div>
-        <h2>Mortgage Calcultor</h2>
-        <button onClick={clearForm}>Clear All</button>
+        <h2>Mortgage Calculator</h2>
+        <button onClick={clearForm} className="clear">
+          Clear All
+        </button>
       </div>
 
       {/* Form */}
@@ -18,11 +20,11 @@ function Form(props) {
           <p>Mortgage Amount</p>
           <div className="alternative">
             <div className="B_inverse B">
-              <p>E</p>
+              <p>€</p>
             </div>
             <div className="A">
               <input
-                type="numebr"
+                type="number"
                 name="amount"
                 value={inputs.amount}
                 placeholder=""
@@ -72,7 +74,7 @@ function Form(props) {
         </div>
 
         <div>
-          <p>Mortgage Type</p>
+          <p className="mortgage_p">Mortgage Type</p>
           <label className="Mortage_type_radio">
             <input
               type="radio"

@@ -3,8 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* p{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+} */
 .form{
   padding: 20px;
+  color:  hsl(200, 24%, 40%);
 }
 input[type="radio"]{
   border: none;
@@ -17,8 +22,10 @@ input[type="radio"]:checked{
 
 .alternative {
   display: flex;
-  border: 1px solid black;
+  border: 1px solid hsl(203, 41%, 72%);
   border-radius: 5px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   width: 100%;
 }
 .A {
@@ -28,7 +35,7 @@ input[type="radio"]:checked{
 }
 .alternative input {
   border: none;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   width: 100%;
 }
@@ -41,7 +48,7 @@ input[type="radio"]:checked{
   float: left;
   align-self: center;
   background: #00ffff20;
-  padding: 10px;
+  padding: 12px;
   border-radius: 0 5px 5px 0px;
 }
 .B_inverse {
@@ -49,20 +56,28 @@ input[type="radio"]:checked{
 }
 
 .Mortage_type_radio {
-  border: 1px solid black;
+  border: 1px solid hsl(203, 41%, 72%);
   display: flex;
   padding: 10px;
   margin-bottom: 5px;
+  /* margin-top: 2rem; */
   border-radius: 5px;
 }
 
 .Mortage_type_radio p {
   margin-left: 5px;
+  color: hsl(202, 55%, 16%);
+  /* font-weight: bolder; */
+  /* margin-top: 1rem; */
+}
+.mortgage_p{
+  margin-bottom: 0.5rem;
 }
 
 .Mortage_type_radio:hover {
   background: hsl(61, 70%, 80%);
   border: hsl(61, 70%, 52%) 1px solid;
+  color: hsl(202, 55%, 16%);
 }
 .Calculate_Repayment {
   width: 100%;
@@ -74,9 +89,18 @@ input[type="radio"]:checked{
   border: none;
   padding: 12px;
   border-radius: 20px;
-  font: 16px;
+  font-size: 17px;
   font-weight: bold;
+  color: hsl(202, 55%, 16%);
 }
 .Calculate_Repayment img{
   padding-right: 1rem;
+}
+.clear{
+  border: none;
+  text-decoration: underline;
+  background: none;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  color: hsl(200, 24%, 40%);
 }

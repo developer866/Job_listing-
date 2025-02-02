@@ -26,8 +26,8 @@ function Result(props) {
       ) : (
         <div className="Result-empty">
           <img src={image} alt="myimage" srcset="" />
-          <h1>Result are show here</h1>
-          <p>complete form and click "calculate <br></br> repayments" to see what your monthly repayments would be.</p>
+          <h2>Result are show here</h2>
+          <p>Complete form and click "calculate <br></br> repayments" to see what your monthly repayments would be.</p>
         </div>
       )}
     </div>
