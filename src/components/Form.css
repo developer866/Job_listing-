@@ -108,4 +108,18 @@ input[type="radio"]:checked{
   .form{
     width: 50%;
   }
+  .Calculate_Repayment {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background: hsl(61, 70%, 52%);
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: hsl(202, 55%, 16%);
+  }
 }
