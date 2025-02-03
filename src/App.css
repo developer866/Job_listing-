@@ -6,9 +6,7 @@
 }
 
 @media  (min-width:467px) {
-    body{
-        /* background: black; */
-    }
+    
     .App{
         display: flex;
         width: 70%;
