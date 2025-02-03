@@ -1,11 +1,17 @@
 .App {
   margin: 3rem auto;
-  height: 100vh;
+  /* chhcechechech later  */
+  height: fit-content;
   font-family: Plus Jakarta Sans;
 }
-input:invalid {
-  border-color: red;
-}
-input:valid {
-  border-color: green;
+
+@media  (min-width:467px) {
+    body{
+        /* background: black; */
+    }
+    .App{
+        display: flex;
+        width: 70%;
+        margin: 2rem auto;
+    }
 }

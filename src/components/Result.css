@@ -2,19 +2,66 @@
   text-align: center;
   background: hsl(202, 55%, 16%);
   color: hsl(203, 41%, 72%);
-  /* color: white; */
   padding: 1.5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 .result {
-  text-align: center;
+  text-align: left;
   background: hsl(202, 55%, 16%);
   color: hsl(203, 41%, 72%);
-  /* color: white; */
   padding: 1.5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.your_result {
+  color: white;
+}
+.show {
+  color: white;
+  margin-bottom: 0.3rem;
+}
 
+.result_calculated {
+  padding: 20px;
+  border-top: 3px solid hsl(61, 70%, 52%);
+  border-radius: 10px;
+  margin-top: 10px;
+  background: hsl(200, 24%, 40%);
+  text-align: left;
+}
 
+.h2_Repayment {
+  color: hsl(61, 70%, 52%);
+  margin: 1rem;
+}
+
+.h2_total {
+  color: white;
+  margin: 1rem;
+}
+
+@media (min-width: 467px) {
+  .container{
+   background: hsl(202, 55%, 16%);
+    width: 50%;
+    border-radius: 10px 10px 10px 100px;
+  }
+  .Result-empty {
+    text-align: center;
+    color: hsl(203, 41%, 72%);
+    padding: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 20px 20px 20px 100px;
+  }
+  .result {
+    text-align: left;
+    color: hsl(203, 41%, 72%);
+    margin-top: 3rem;
+    padding: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 20px 20px 20px 100px;
+  }
+}

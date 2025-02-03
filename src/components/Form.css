@@ -104,3 +104,8 @@ input[type="radio"]:checked{
   margin-bottom: 0.4rem;
   color: hsl(200, 24%, 40%);
 }
+@media  (min-width:467px) {
+  .form{
+    width: 50%;
+  }
+}

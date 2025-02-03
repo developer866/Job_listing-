@@ -24,7 +24,7 @@ function Form(props) {
             </div>
             <div className="A">
               <input
-                type="number"
+                // type="number"
                 name="amount"
                 value={inputs.amount}
                 placeholder=""
@@ -39,7 +39,7 @@ function Form(props) {
           <div className="alternative">
             <div className="A">
               <input
-                type="number"
+                // type="number"
                 name="term"
                 value={inputs.term}
                 onChange={handleChange}
