@@ -59,9 +59,9 @@
     text-align: left;
     color: hsl(203, 41%, 72%);
     margin-top: 3rem;
-    padding: 1.5rem;
+    /* padding: 1.5rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; */
     border-radius: 20px 20px 20px 100px;
   }
 }
