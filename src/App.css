@@ -3,7 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
+  font-family: Plus Jakarta Sans;
+}
+
+p{
+  margin-top: 1rem;
 }
 
 body {
@@ -12,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 /* Grid Container */
@@ -21,7 +26,7 @@ body {
   width: 80%;
   margin: 0 auto;
   gap: 10px;
-  
+
   /* Flexible grid */
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: auto;
@@ -37,29 +42,63 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Hover Effect */
-.box:hover {
-  transform: scale(1.05);
-}
+
 
 /* Grid Layout */
-.box-1 { grid-row: span 3; grid-column: span 6; }
-.box-2 { grid-row: span 3; grid-column: span 4; }
-.box-3 { grid-row: span 6; grid-column: span 4; }
-.box-4 { grid-row: span 3; grid-column: span 4; }
-.box-5 { grid-row: span 3; grid-column: span 6; } /* Kira's card */
+.box-1 {
+  grid-row: span 3;
+  grid-column: span 6;
+  background: purple;
+  color: hsl(202, 86%, 94%);
+  background-image: url("./images/bg-pattern-quotation.svg") ;
+  background-repeat: no-repeat;
+  background-position: calc(75%) top;
+  background
+  p{
+    color: hsl(203, 41%, 72%);
+  }
+}
+.box-2 {
+  grid-row: span 3;
+  grid-column: span 4;
+  background: hsl(200, 24%, 40%);
+  color: hsl(202, 86%, 94%);
+  p{
+    color: hsl(203, 41%, 72%);
+  }
+}
 
-/* Responsive Design */
+.box-3 {
+  grid-row: span 6;
+  grid-column: span 4;
+}
+.box-4 {
+  grid-row: span 3;
+  grid-column: span 4;
+}
+.box-5 {
+  grid-row: span 3;
+  grid-column: span 6;
+  background: hsl(202, 55%, 16%);
+  color: hsl(202, 86%, 94%);
+  p{
+    color: hsl(203, 41%, 72%);
+  }
+} 
+
 @media (max-width: 1024px) {
   .App {
     grid-template-columns: repeat(6, 1fr);
   }
-  
-  .box-1, .box-5 {
+
+  .box-1,
+  .box-5 {
     grid-column: span 6;
   }
-  
-  .box-2, .box-3, .box-4 {
+
+  .box-2,
+  .box-3,
+  .box-4 {
     grid-column: span 3;
   }
 }
@@ -73,11 +112,11 @@ body {
     grid-column: span 3;
   }
   .box-5 {
-    grid-row: 12; /* Move Kira's card to the last row */
+    grid-row: 12; 
   }
 }
 
-/* Mobile View - Kira's card comes last */
+
 @media (max-width: 480px) {
   .App {
     grid-template-columns: repeat(1, 1fr);
@@ -90,19 +129,19 @@ body {
   }
 
   .box-5 {
-    grid-row: 12; /* Move Kira's card to the last row */
+    grid-row: 12; 
   }
 }
 
-.profile{
-  /* border: 1px solid black; */
+.profile {
   display: flex;
   align-items: center;
-  img{
+  margin-bottom: 10px;
+  img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid black ;
+    border: 1px solid black;
     margin-right: 10px;
   }
 }
