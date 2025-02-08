@@ -32,3 +32,5 @@
       ]
     }
   }
+
+  git remote set-url origin https://github.com/developer866/Job_listing-.git
