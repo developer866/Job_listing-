@@ -63,3 +63,59 @@ li {
   margin: 0.3rem;
   color: hsl(180, 29%, 50%);
 }
+
+/* Mobile */
+@media (max-width: 425px) {
+  body {
+    /* background: black; */
+    margin-top: 100px;
+  }
+  .Container {
+    width: 80%;
+    margin: 3rem auto;
+    display: block;
+  }
+  .Logo {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    img {
+      position: relative;
+      width: 60%;
+      left: 10px;
+      top: -70px;
+    }
+  }
+  .Section_A {
+    display:in block;
+    /* height: 100px; */
+    padding: 25px 0;
+    border-bottom: 1px solid black;
+    /* padding: 10px; */
+   
+  }
+  .Time{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    }
+  .Details{
+    margin: 0;
+    margin-top: 10px;
+  }
+  ul{
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+  li{
+    background: lightblue;
+    /* padding: 20px; */
+    text-align: center;
+    border-radius: 5px;
+    margin-left: -10px;
+  }
+}
