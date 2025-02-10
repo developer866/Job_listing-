@@ -9,8 +9,10 @@
   padding: 1rem;
 }
 .Top{
-  background: hsl(180, 29%, 50%);;
+  background: hwb(180 36% 36%);;
   width: 100%;
+  margin: 0;
+  padding: 0;
   /* height: 20vh; */
   img{
     width: 100%;
