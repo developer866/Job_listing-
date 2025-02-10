@@ -85,7 +85,7 @@ li:hover{
 /* Mobile */
 @media (max-width: 425px) {
   body {
-    margin-top: 100px;
+    margin-top: 10px;
   }
   
 .Top{
