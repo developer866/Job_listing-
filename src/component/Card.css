@@ -90,6 +90,7 @@ li:hover{
   
 .Top{
   background: hwb(180 36% 36%);
+  background-image: url("../bg-header-mobile.svg");
   width: 100%;
   margin: 0;
   padding: 0;
