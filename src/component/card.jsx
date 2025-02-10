@@ -1,10 +1,13 @@
 import React from "react";
 import "./Card.css";
-
+import Header from "../bg-header-desktop.svg";
 
 function Card({ Data }) {
   return (
     <div>
+      <div className="Top">
+        <img src={Header} alt="" srcset="" />
+      </div>
       {Data.map((data) => (
         <div key={data.id}>
           <div
@@ -18,7 +21,9 @@ function Card({ Data }) {
           >
             <div className="Section_A">
               {/* Logo */}
-              <div className="Logo"><img src={data.logo} alt="images" /> </div>
+              <div className="Logo">
+                <img src={data.logo} alt="images" />{" "}
+              </div>
               {/* Details */}
               <div className="Details">
                 <div className="CompanyName">
